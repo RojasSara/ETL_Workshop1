@@ -15,29 +15,6 @@ A complete ETL pipeline that ingests raw candidate applications, transforms and 
 - [Troubleshooting](#troubleshooting)
 
 ---
-
-## Architecture
-
-```mermaid
-graph TD
-  classDef fact fill:#FFF8E1,stroke:#FBC02D,stroke-width:2,color:#111;
-  classDef dim  fill:#E3F2FD,stroke:#64B5F6,stroke-width:1,color:#111;
-
-  fact["fact_hiring\nPK: fact_id\nFKs: candidate_id, date_id, country_id, technology_id, seniority_id\n\nyears_experience, code_challenge_score, technical_interview_score, hired"]:::fact
-
-  dim_candidate["dim_candidate\nPK: candidate_id\nfirst_name, last_name, email"]:::dim
-  dim_date["dim_date\nPK: date_id (YYYYMMDD)\ndate, year, quarter, month, day, is_weekend"]:::dim
-  dim_country["dim_country\nPK: country_id\ncountry_name"]:::dim
-  dim_technology["dim_technology\nPK: technology_id\ntechnology"]:::dim
-  dim_seniority["dim_seniority\nPK: seniority_id\nseniority"]:::dim
-
-  dim_candidate -->|candidate_id| fact
-  dim_date -->|date_id| fact
-  dim_country -->|country_id| fact
-  dim_technology -->|technology_id| fact
-  dim_seniority -->|seniority_id| fact
-
-
 ## Structure
 
 ETL_Workshop1/
