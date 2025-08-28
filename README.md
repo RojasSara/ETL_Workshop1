@@ -60,7 +60,7 @@ Install the “SQLite” extension (alexcvzz).
 Add connection to dw/dw_hiring.db.
 Open and run queries from dw/kpis.sql (select a single query block → Run Query).
 
-## KPIs
+
 #	KPI	Purpose
 1	Hires by Technology	Top technologies by number of hires
 2	Hires by Year	Hiring trend over time
