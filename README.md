@@ -75,6 +75,7 @@ DB locked: close any DB viewer/editor tabs then rerun ETL.
 Different column names: check preprocessing in etl_load.py where columns are normalized.
 Plots not created: confirm matplotlib is installed and plots/ has write permissions.
 
-Requirements
+
+## Requirements
 Python 3.10+
 pip install -r requirements.txt (pandas, matplotlib)
