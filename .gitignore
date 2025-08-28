@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# IDE / OS
+.vscode/
+.DS_Store
+
+# Data / generated files
+*.db
+*.png
+data/candidates.csv
+
+# Others
+*.zip
